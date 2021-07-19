@@ -1,27 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+
 img {
-  height: 40vh;
-  width: 30vw;
+  height: 30em;
+  width: 40em;
   margin-bottom: 1em;
-  border-radius: 10px;
+  border-radius: 1px;
 }
 
 .material {
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: auto;
-  padding: 1em;
+  /* padding: 1em; */
+  padding-top: 10vh;
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  border-radius: 6px;
+  color: rgb(0, 0, 0);
+  font-family: 'Zen Loop', cursive;
+  font-weight: 400;
+  font-size: 64px;
 }
 
 #author {
-  max-width: 800px;
-  width: 300px;
+  max-width: 300px;
+  width: 200px;
   margin-top: 1%;
+}
+#author a:hover {
+  max-width: 300px;
+  width: 200px;
+  text-decoration: none;
 }
 
 .toggle {
@@ -36,5 +44,5 @@ h1 {
 }
 
 mat-card {
-  background: rgba(36, 36, 36, 0.281);
+  background: rgba(36, 36, 36, 0.041);
 }

@@ -1,27 +1,23 @@
 <div class="container-fluid">
   <div>
-    <div class="material">
+    <div class="material jumbotron">
       <mat-card>
-        <h1>Classy Quotes</h1>
+        <h1 class="text-center p-4">iQuote</h1>
       </mat-card>
     </div>
     <hr>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div *ngFor='let quote of quotes; let i=index'>
-                <div id="author">
-                  <mat-card>
-                   <h4>{{quote.author}}</h4>
-                  </mat-card>
-                </div>
-                <br>
-                <div>{{myDate|date:'mediumTime'}}</div>
-                <br>
-                <img src="{{quote.image}}"/>
-                <br>
-                <button (click)='toggleQuotes(i)' class="btn btn-info toggle">Toggle quote</button>
+            <mat-card class="card">
+              <mat-card-title id="author"><h4 style="outline: 1px solid red;">{{quote.author}}</h4></mat-card-title>
+                <mat-card-subtitle><div>{{myDate|date:'mediumTime'}}</div></mat-card-subtitle>
+                <img mat-card-image src="{{quote.image}}" class="mx-auto d-block"/>
+                <mat-card-actions>
+                  <button (click)='toggleQuotes(i)' class="btn btn-secondary toggle">Toggle</button>
                 <app-quote-detail *ngIf='quote.showQuotes' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
-
+                </mat-card-actions>
+                </mat-card>
               </div>
 
   </div>
