@@ -4,6 +4,11 @@ mat-card-title {
   border-radius: 6px;
 }
 
+.form-box{
+  /* background-color: #8ec5fc; */
+}
+
+
 h3 {
   font-size: 32px;
 }
@@ -16,4 +21,8 @@ label {
 
 .add {
   margin-top: 1em;
+}
+
+.form-control.ng-touched.ng-invalid{
+  border:2px solid red;
 }
