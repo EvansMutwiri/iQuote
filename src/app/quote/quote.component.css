@@ -26,9 +26,12 @@ h1 {
   width: 200px;
   margin-top: 1%;
 }
+#author a{
+  text-decoration: none;
+}
 #author a:hover {
   max-width: 300px;
-  width: 200px;
+  width: 400px;
   text-decoration: none;
 }
 

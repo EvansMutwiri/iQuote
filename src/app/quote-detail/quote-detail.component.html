@@ -1,9 +1,8 @@
 <p class="quotes text-center">{{ quote.theirQuotes }}</p>
 <br />
 <button (click)="doneWithQuote(true)" class="btn btn-danger">Delete</button>
-<div id="up">
-  <a href="#"><i (click)="upVote(true)" class="fa fa-thumbs-up up"></i></a>
-</div>
+<div ng-app='voteApp' ng-controller='MainCtrl' id="up">
+  <i title="Up Votes" ng-click="upVote()" class="fa fa-arrow-circle-up" style='cursor:pointer'></i>
 <div id="down">
-  <a href="#"><i (click)="downVote(true)" class="fa fa-thumbs-down"></i></a>
+  <i title="Down Votes" ng-click="downVote()" class="fa fa-arrow-circle-down" style='cursor:pointer'></i>
 </div>
