@@ -1,0 +1,40 @@
+img {
+  height: 40vh;
+  width: 30vw;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+
+.material {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  border-radius: 6px;
+}
+
+#author {
+  max-width: 800px;
+  width: 300px;
+  margin-top: 1%;
+}
+
+.toggle {
+  margin: 1em;
+
+}
+
+#up,
+#down {
+  width: 5vw;
+  font-size: 32px;
+}
+
+mat-card {
+  background: rgba(36, 36, 36, 0.281);
+}

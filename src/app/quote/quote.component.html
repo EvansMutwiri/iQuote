@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div>
+    <div class="material">
+      <mat-card>
+        <h1>Classy Quotes</h1>
+      </mat-card>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6">
+          <div *ngFor='let quote of quotes; let i=index'>
+                <div id="author">
+                  <mat-card>
+                   <h4>{{quote.author}}</h4>
+                  </mat-card>
+                </div>
+                <br>
+                <div>{{myDate|date:'mediumTime'}}</div>
+                <br>
+                <img src="{{quote.image}}"/>
+                <br>
+                <button (click)='toggleQuotes(i)' class="btn btn-info toggle">Toggle quote</button>
+                <app-quote-detail *ngIf='quote.showQuotes' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
+                
+                
+                <br>
+                <br>
+                <!-- <div id="up">
+                  <mat-card>
+                    <i (click)="upVote(true)" class="fa fa-thumbs-up up"></i>
+                  </mat-card>
+                </div>
+                <br>
+                <div id="down">
+                  <mat-card>
+                    <i  (click)="downVote(true)" class="fa fa-thumbs-down">
+                      
+                    </i></mat-card>
+                </div> -->
+              </div>
+  
+  </div>
+
+  <div class="col-md-6">
+    <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+  </div>
+</div>
+
