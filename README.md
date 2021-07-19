@@ -1,7 +1,11 @@
 # Quotes-APP
 
 This is a website application where one can view quotes, they can also interact with them by voting, downvoting adding and deleting.
+
+- User *must* include their name, author name, quote and provide an image url to generate quote.
+
 ## Technologies used
+
 - HTML
 - CSS
 - JAVASCRIPT
@@ -15,15 +19,14 @@ This is a website application where one can view quotes, they can also interact 
 
 [Live Demo Link]( https://EvansMutwiri.github.io/iQuote/)
 
-
 ### Setup
 
 - Clone the repository to your folder of choice using Git (or just download all the files)
-```
-$ git clone https://github.com/EvansMutwiri/iQuote.git
 
 ```
+git clone https://github.com/EvansMutwiri/iQuote.git
 
+```
 
 ## Development server
 

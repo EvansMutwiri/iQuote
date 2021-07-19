@@ -47,5 +47,6 @@ h1 {
 }
 
 mat-card {
-  background: rgba(36, 36, 36, 0.041);
+  /* background: rgba(36, 36, 36, 0.041); */
+  background: #84bef8bd;
 }

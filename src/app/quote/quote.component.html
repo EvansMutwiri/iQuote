@@ -10,7 +10,7 @@
         <div class="col-md-6">
           <div *ngFor='let quote of quotes; let i=index'>
             <mat-card class="card">
-              <mat-card-title id="author"><h4 style="outline: 1px solid red;">{{quote.author}}</h4></mat-card-title>
+              <mat-card-title id="author"><h4 style="outline: 2px solid red;">{{quote.author}}</h4></mat-card-title>
                 <mat-card-subtitle><div>{{myDate|date:'mediumTime'}}</div></mat-card-subtitle>
                 <img mat-card-image src="{{quote.image}}" class="mx-auto d-block"/>
                 <app-quote-detail *ngIf='quote.showQuotes' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>

@@ -9,7 +9,7 @@
                 <div class="form-group">
                     <label for="author">Author</label>
                     <input type="text" class="form-control" id="author" required [(ngModel)]="newQuote.author" name="author" #quote='ngModel'>
-                    <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                    <div [hidden]="quote.valid || !quote.touched" class="alert alert-danger">
                         <p>Author is required</p>
                       </div>
 
@@ -17,24 +17,24 @@
                 <div class="form-group">
                     <label for="quote">Quote</label>
                     <textarea name="quote" id="quote" rows="10" class="form-control" required [(ngModel)]="newQuote.theirQuotes" name="theirQuotes" #theirQuotes='ngModel'></textarea>
-                    <div [hidden]="!theirQuotes.valid || theirQuotes.pristine" class="alert alert-danger">
+                    <div [hidden]="theirQuotes.valid || !theirQuotes.touched" class="alert alert-danger">
                         <p>Quote can't be left blank</p>
                       </div>
                 </div>
                 <div class="form-group">
                     <label for="name">Your name</label>
                     <input type="text" class="form-control" id="name" required [(ngModel)]="newQuote.name" name="name" #name='ngModel'>
-                    <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                    <div [hidden]="name.valid || !name.touched" class="alert alert-danger">
                         <p>Type your name</p>
                       </div>
                 </div>
             </div>
             <div class="form-group">
                 <label for="image">Authors Image link</label>
-                <input class="form-control" type="text" id="image" [(ngModel)]="newQuote.image" name="image" #image="ngModel">
+                <input class="form-control" type="text" id="image" [(ngModel)]="newQuote.image" name="image" #image="ngModel" required>
             </div>
                 <div class="add">
-                    <button type="submit" class="btn btn-success" >Write a quote</button>
+                    <button [disabled]="!name.dirty || !image.valid" type="submit" class="btn btn-success" >Write a quote</button>
                 </div>
         </form>
     </div>
