@@ -1,6 +1,6 @@
 <mat-card>
     <div class="container-fluid form-box">
-            <h4>CREATE A NEW QUOTE</h4>
+            <h4 style="outline: 2px solid red;">CREATE A NEW QUOTE</h4>
         <hr>
         <div class="form-bg">
 <form (ngSubmit)="submitMovie()" quoteForm="ngForm">
@@ -9,7 +9,7 @@
                     <label for="author">Author</label>
                     <input type="text" class="form-control" id="author" required [(ngModel)]="newQuote.author" name="author" #quote='ngModel'>
                     <div [hidden]="quote.valid || !quote.touched" class="alert alert-danger">
-                        <p>Author is required</p>
+                        <p>Author name is required</p>
                       </div>
 
                 </div>
