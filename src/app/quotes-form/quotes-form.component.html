@@ -2,10 +2,10 @@
     <div class="container-fluid form-box">
             <h4 style="outline: 2px solid red;">CREATE A NEW QUOTE</h4>
         <hr>
-        <div class="form-bg">
+        <div class="form-bg card">
 <form (ngSubmit)="submitMovie()" quoteForm="ngForm">
             <div class="row">
-                <div class="form-group">
+                <div class="form-group md-form">
                     <label for="author">Author</label>
                     <input type="text" class="form-control" id="author" required [(ngModel)]="newQuote.author" name="author" #quote='ngModel'>
                     <div [hidden]="quote.valid || !quote.touched" class="alert alert-danger">

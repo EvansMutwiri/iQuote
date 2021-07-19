@@ -12,7 +12,7 @@
             <mat-card class="card">
               <mat-card-title id="author"><h4 style="outline: 2px solid red;">{{quote.author}}</h4></mat-card-title>
                 <mat-card-subtitle><div>{{myDate|date:'mediumTime'}}</div></mat-card-subtitle>
-                <img mat-card-image src="{{quote.image}}" class="mx-auto d-block img-responsive"/>
+                <img mat-card-image src="{{quote.image}}" class="mx-auto d-block img-responsive hover-shadow"/>
                 <app-quote-detail *ngIf='quote.showQuotes' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
                 </mat-card>
                 <mat-card-actions>
