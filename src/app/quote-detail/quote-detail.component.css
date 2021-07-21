@@ -3,8 +3,15 @@
 .quotes {
   font-size: 20px;
   font-family: 'Gochi Hand', cursive;
+  color: #00010D;
 }
 
+#up {
+  color: green;
+}
+#down {
+  color: red;
+}
 
 #up,
 #down {
@@ -12,6 +19,6 @@
   font-size: 32px;
 }
 
-mat-card {
-  background: rgba(36, 36, 36, 0.041);
+.mat-card {
+  background: rgba(36, 36, 36, 0);
 }

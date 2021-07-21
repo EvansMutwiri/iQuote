@@ -16,7 +16,7 @@
                 <app-quote-detail *ngIf='quote.showQuotes' [quote]='quote' (isComplete) = 'completeQuote($event,i)'></app-quote-detail>
                 </mat-card>
                 <mat-card-actions>
-                  <button (click)='toggleQuotes(i)' class="btn btn-secondary toggle">Toggle</button>
+                  <button (click)='toggleQuotes(i)' class="btn btn-warning toggle">Toggle</button>
 
                 </mat-card-actions>
               </div>
