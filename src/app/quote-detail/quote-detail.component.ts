@@ -1,3 +1,4 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Quote } from '../quote';
 
@@ -13,15 +14,15 @@ export class QuoteDetailComponent implements OnInit {
     this.isComplete.emit(Delete);
   }
 
-  @Output() isUpVote = new EventEmitter<boolean>();
-  @Output() isDownVote = new EventEmitter<boolean>();
 
-  upVote(like: boolean) {
-    this.isUpVote.emit(like);
+
+  upVote(like:boolean){
+    this.quote.showUpVote=this.quote.showUpVote+1
   }
 
   downVote(dislike: boolean) {
-    this.isDownVote.emit(dislike);
+    this.quote.showDownVote=this.quote.showDownVote+1
+
   }
   constructor() { }
 

@@ -1,6 +1,6 @@
-# Quotes-APP
+# iQuote-app
 
-This is a website application where one can view quotes, they can also interact with them by voting, downvoting adding and deleting.
+This is a website application where one can view quotes, they can also interact with them by voting, down-voting adding and deleting.
 
 - User *must* include their name, author name, quote and provide an image url to generate quote.
 

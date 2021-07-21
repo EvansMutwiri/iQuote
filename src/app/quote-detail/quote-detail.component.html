@@ -2,7 +2,8 @@
 <br />
 <button (click)="doneWithQuote(true)" class="btn btn-danger">Delete</button>
 <div ng-app='voteApp' ng-controller='MainCtrl' id="up">
-  <i title="Up Votes" ng-click="upVote()" class="fa fa-arrow-circle-up" style='cursor:pointer'></i>
-<div id="down">
-  <i title="Down Votes" ng-click="downVote()" class="fa fa-arrow-circle-down" style='cursor:pointer'></i>
-</div>
+
+  <i title="Up Votes" (click)="upVote(true)" class="fa fa-arrow-circle-up" style='cursor:pointer'>{{quote.showUpVote}}</i>
+
+<i title="Up Votes" (click)="downVote(true)" class="fa fa-arrow-circle-down" style='cursor:pointer'>{{quote.showDownVote}}</i>
+
