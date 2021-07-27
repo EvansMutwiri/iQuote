@@ -4,7 +4,4 @@ body {
   background-color:#00010D;
   background-image: linear-gradient(6deg, #363440 0%, #00010D 80%);
   /* background-image: url(https://www.quote.cc/wp-content/uploads/2020/12/stoic-quotes-dec3-16.jpg); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }

@@ -14,7 +14,7 @@ export class QuotesFormComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  submitMovie() {
+  submitAnotherOne() {
     this.addQuote.emit(this.newQuote);
   }
 

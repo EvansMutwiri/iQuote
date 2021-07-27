@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
     BrowserAnimationsModule,
     MatCardModule,
     FormsModule,
-    MatGridListModule
+    MatGridListModule,
+    NgProgressModule,
+    NgProgressHttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

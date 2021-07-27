@@ -29,7 +29,7 @@ label {
 }
 
 textarea:focus, input:focus{
-  background: #D7D7D9;
+  background: #F2F2F2;
   padding: 0;
 }
 
